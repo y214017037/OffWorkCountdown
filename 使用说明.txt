@@ -1,0 +1,55 @@
+下班倒计时 (OffWorkCountdown)
+
+Rainmeter 桌面小部件：距离下班倒计时、距周五、距发薪、今日已赚。
+
+#安装要求
+
+- Windows 7 及以上
+- Rainmeter 4.5+
+  官网：https://www.rainmeter.net/
+
+#安装方法
+
+1. 确保已安装 Rainmeter
+2. 双击 OffWorkCountdown_1.0.0.rmskin
+3. 按提示完成安装（可勾选安装后自动加载）
+4. 部件会出现在桌面，可用鼠标拖动位置
+
+#修改上/下班时间、发薪日、日薪
+
+右键部件 -> 编辑设置，或编辑：
+
+Documents\Rainmeter\Skins\OffWorkCountdown\@Resources\Variables.inc
+
+| 变量 | 含义 | 默认 |
+|------|------|------|
+| WorkStartHour / WorkStartMinute | 上班时间 | 9:00 |
+| WorkEndHour / WorkEndMinute | 下班时间 | 18:00 |
+| PaydayDay | 每月几号发薪 | 10 |
+| DailyWage | 日薪（元） | 300 |
+| WorkOnWeekend | 1=周末也倒计时；0=周末显示休息 | 1 |
+
+保存后右键部件 -> 刷新。
+
+#更换右侧图片
+
+用你的 PNG 覆盖：
+
+Documents\Rainmeter\Skins\OffWorkCountdown\@Resources\Images\mascot.png
+
+然后刷新皮肤。
+
+#说明
+
+-「周五」表示距离下一个周五还有几天（今天是周五则为 0）
+-「今天赚了」=日薪 × 已工作时长 ÷ 当天总工时
+- 若按月薪估算：日薪 ≈ 月薪 ÷ 21.75
+
+#版权与声明
+
+- 皮肤代码可自由使用与修改
+- 右侧插画请确保你有使用权；公开分发前建议换成自己的图片
+
+#版本
+
+v1.0.0
